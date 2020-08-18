@@ -51,16 +51,17 @@ end
   def self.alphabetical
     @@all.sort do |a,b|
       a.name <=> b.name 
-      #or
+      # or
       # @@all.sort_by{|song| song.name }
     end
   end
   
   def self.new_from_filename(filename)
+    binding.pry
     split_filename = filename.chop.chop.chop.chop.split(" - ")
     song = song.new
     song.name = split_filename[1]
     song.artist_name = split_filename[0]
-    binding.pry
+    
 end
 end
