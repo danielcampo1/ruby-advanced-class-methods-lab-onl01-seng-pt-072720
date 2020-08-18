@@ -59,9 +59,9 @@ end
   def self.new_from_filename(filename)
     binding.pry
     split_filename = filename.chop.chop.chop.chop.split(" - ")
-    song = song.new
-    song.name = split_filename[1]
-    song.artist_name = split_filename[0]
+    # song = song.new
+    # song.name = split_filename[1]
+    # song.artist_name = split_filename[0]
     
 end
 end
